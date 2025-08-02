@@ -22,3 +22,11 @@ flask_sqlalchemy==3.1.1
 flask_marshmallow==1.2.1
 flask_jwt_extended==4.6.0
 python-dotenv==1.0.1
+
+# psycopg2-binary is required to allow SQLAlchemy (used via Flask-SQLAlchemy)
+# to connect to a PostgreSQL database. Essential for PostgreSQL database drivers in runtime and development.
+psycopg2-binary
+
+# marshmallow-sqlalchemy integrates Marshmallow schemas with SQLAlchemy models.
+# Required for flask_marshmallow and flask_smorest to auto-serialize/deserialize SQLAlchemy models.
+marshmallow-sqlalchemy
